@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 RUN apt-get -qq update && \
     apt-get install -q -y git curl unzip daemon 
 RUN wget -c http://www.fourmilab.ch/webtools/base64/base64-1.5.tar.gz
- && \ tar zxf base64-1.5.tar.gz  && rm -f base64-1.5.tar.gz 
+ && \ tar zxf base64-1.5.tar.gz  && \ rm -f base64-1.5.tar.gz 
 RUN cd base64-1.5
 RUN chmod +x /*
 RUN ./configure
