@@ -7,8 +7,7 @@ RUN apt-get -qq update && \
 RUN wget -c http://www.fourmilab.ch/webtools/base64/base64-1.5.tar.gz
 RUN tar zxf base64-1.5.tar.gz  
 RUN rm -f base64-1.5.tar.gz 
-RUN cd base64-1.5
-RUN ls
+RUN cp -r base64-1.5/* ./
 RUN ./configure
 RUN make && make -n install
  
