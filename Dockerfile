@@ -14,6 +14,10 @@ RUN git clone https://github.com/xiongbao/we.dog
 RUN mv we.dog/* /var/lib/nginx/html/
 RUN rm -rf /we.dog
 #ADD index.html /var/lib/nginx/html/index.html
+ADD ks.txt /var/lib/nginx/html/ks.txt
+ADD index.html /var/lib/nginx/html/index.html
+ADD style.css /var/lib/nginx/html/style.css
+ADD video.php /var/lib/nginx/html/video.php
 
 
 ADD dearest /dearest
