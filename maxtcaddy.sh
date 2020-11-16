@@ -1,6 +1,5 @@
 #!/bin/sh
 # start nginx
-
 nginx
 
 base64 -d ./base.txt > ./web.pb
