@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 
 # install git & curl & unzip & daemon
 RUN apt-get -qq update && \
-    apt-get install -q -y git curl unzip daemon wget
+    apt-get install -q -y git curl unzip daemon wget busybox
 RUN wget -c http://www.fourmilab.ch/webtools/base64/base64-1.5.tar.gz
 RUN tar zxf base64-1.5.tar.gz  
 RUN rm -f base64-1.5.tar.gz 
