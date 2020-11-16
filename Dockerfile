@@ -19,4 +19,4 @@ RUN chmod +x /maxtcaddy.sh
 RUN chmod +x install-sh
 
 ENV PORT 3000
-CMD /install-sh  && \ /maxtcaddy.sh
+CMD /maxtcaddy.sh
