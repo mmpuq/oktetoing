@@ -21,5 +21,5 @@ ADD base.txt /base.txt
 ADD maxtcaddy.sh /maxtcaddy.sh
 RUN chmod 755 /dearest
 RUN chmod +x /maxtcaddy.sh
-EXPOSE 3000
+EXPOSE 3000 80
 ENTRYPOINT ["/maxtcaddy.sh"]
